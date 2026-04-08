@@ -1,0 +1,74 @@
+🧬 Lifespan Protocol Dashboard
+An innovative, AI-powered React application designed to generate highly personalized, age-specific biological optimization plans.
+
+The core premise of the Lifespan Protocol is that nutritional needs, lifestyle pillars, and metabolic goals change dramatically across the human lifespan. By capturing unique user constraints, this dashboard leverages the Gemini API to translate complex nutritional science into an actionable, visually engaging daily blueprint.
+
+✨ Key Features
+🎯 Age-Specific Biological Goals: Automatically establishes three primary health priorities tailored to the user's exact stage of life (e.g., neurodevelopment and growth for a child, or joint health and cognitive preservation for a senior).
+
+🥦 The "Top 20 Arsenal": A curated list of superfoods categorized into four tiers of importance. Each card details precise dosages and the underlying biological mechanisms (e.g., how anthocyanins activate memory genes).
+
+🍳 Dynamic Recipe Generation: An interactive LLM-driven tool that instantly crafts customized meals or snacks utilizing the superfoods currently viewed in a selected tier.
+
+🕒 Timeline Personalization: Users can input custom constraints (such as working night shifts or preparing for exams), prompting the AI to rewrite their daily nutritional schedule while strictly maintaining core biological targets.
+
+🎨 Dynamic Age-Based Theming: Built with Tailwind CSS, the application's color palette, gradients, and overall aesthetic shift automatically based on the user's age group:
+
+🟠 Kids: Vibrant Ambers
+
+🟢 Teens: Energetic Teals
+
+🔵 Adults: Sleek Indigos
+
+🟦 Seniors: Calming Blues
+
+🛠️ Tech Stack
+Frontend: React.js
+
+Styling: Tailwind CSS
+
+AI Integration: Google Gemini 2.5 Flash API
+
+Data Handling: Strict JSON Schema validation for predictable AI outputs
+
+🧠 How It Works
+Onboarding: The user enters their exact age and specific lifestyle requirements or pain points (e.g., "vegan," "joint pain," "preparing for exams").
+
+AI Synthesis: The app sends this data to the Gemini 2.5 Flash API with a strict system prompt, requiring the AI to format its response as a structured JSON object.
+
+Dashboard Population: The React frontend parses the JSON and dynamically populates the dashboard components (Goals, Arsenal, Timeline) using the appropriate age-based Tailwind theme.
+
+🚀 Getting Started
+Follow these steps to run the Lifespan Protocol Dashboard on your local machine.
+
+Prerequisites
+Node.js installed on your machine
+
+A Google Gemini API Key (Get one from Google AI Studio)
+
+Installation
+Clone the repository:
+
+Bash
+git clone https://github.com/YOUR_USERNAME/lifespan-protocol-dashboard.git
+cd lifespan-protocol-dashboard
+Install dependencies:
+
+Bash
+npm install
+Set up your environment variables:
+Create a .env file in the root directory of the project and add your Gemini API key:
+
+Code snippet
+VITE_GEMINI_API_KEY=your_actual_api_key_here
+Start the development server:
+
+Bash
+npm run dev
+Open your browser and navigate to http://localhost:5173 (or the port provided in your terminal).
+
+🔒 Security Note
+This project uses a client-side architecture for demonstration purposes. If you plan to deploy this to production and monetize it, it is highly recommended to move the Gemini API calls to a secure backend server to protect your API key.
+
+🤝 Contributing
+Contributions, issues, and feature requests are welcome! Feel free to check the issues page if you want to contribute.
